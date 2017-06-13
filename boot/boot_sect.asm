@@ -26,10 +26,10 @@ jmp $
 [bits 32]
 BEGIN_PM:
 
-	mov esi, MSG_PROT_MODE  ; Print the message that we successfully
-	call print_string_32    ; loaded the 32-bit protected mode
+    mov esi, MSG_PROT_MODE  ; Print the message that we successfully
+    call print_string_32    ; loaded the 32-bit protected mode
 
-	jmp kernel_entry        ; Load the kernel
+    jmp kernel_entry        ; Load the kernel
 
 [bits 16]
 MSG_REAL_MODE db "Started in 16-bit Real Mode", 0

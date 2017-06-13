@@ -4,10 +4,10 @@
 // The main kernel function
 void kmain()
 {
-	screen = (unsigned short *) VGA_MEM_LOC;
-	attrib = VGA_COLOR_WHITE;
+    screen = (unsigned short *) VGA_MEM_LOC;
+    attrib = VGA_COLOR_WHITE;
 
-	clear_screen();
+    clear_screen();
 
     puts("MetalOS\n\n");
 
@@ -16,5 +16,5 @@ void kmain()
     puts("Meanwhile, you can print single characters: ");
     putc('a');
 
-	while(1);
+    while(1);
 }
